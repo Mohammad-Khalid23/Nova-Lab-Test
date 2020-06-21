@@ -1,0 +1,16 @@
+tbody .user {
+  cursor: pointer; }
+
+tbody .banUser {
+  cursor: pointer;
+  background-color: #c0392b;
+  color: white; }
+
+.labels {
+  width: 65px;
+  display: inline-block; }
+
+.userImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px; }

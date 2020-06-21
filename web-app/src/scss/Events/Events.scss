@@ -1,0 +1,62 @@
+.tableBody{
+    .event{
+    cursor: pointer;  
+ }
+.blockEvent{
+    cursor: pointer;
+    background-color:#c0392b;
+    color:white 
+ }
+ .borderBottomColor{
+  border-bottom: 1px solid #c8ced3
+ }
+ .active{
+   color: red
+ }
+ .disable{
+   color:green
+ }
+}
+     .iconSize{
+        font-size: 20px;
+      }
+.add-product-btn {
+    float: right; }
+  .eventTitle{
+    font-size: 20px;
+    padding-left: 0px;
+  }
+  .eventLocation{
+  margin-top: 15px;
+  padding: 0px
+  
+  }
+  .eventDescriptionDiv{
+    margin-top: 15px;
+    padding: 0px
+  }
+  .eventDescription{
+    height:90px;
+    overflow-y: auto;
+  }
+  .totalEarning{
+    margin-top: 15px;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    text-align: center
+  }
+  .eventImage{
+      width: 120px;
+      height: 120px;
+      border-radius: 10px
+  }
+  .hostImageContainer{
+    margin-top: 10px;
+  }
+      .hostAvatar{
+        width: 50px;
+         height: 50px;
+         border-radius:8px;
+         display: block 
+      }
+ 

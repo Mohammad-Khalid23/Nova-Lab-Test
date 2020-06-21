@@ -1,0 +1,11 @@
+.settings-page .card-block{
+    padding: 20px;
+}
+
+.email-modal.action-btns{
+    text-align: right;
+}
+
+.email-modal.action-btns .btn{
+    margin-left: 10px;
+}

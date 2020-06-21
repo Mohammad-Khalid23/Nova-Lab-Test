@@ -1,0 +1,21 @@
+.userEventContainer .eventList {
+  height: 60vh !important;
+  overflow: auto !important;
+  padding: 0px 15px; }
+
+.userEventContainer .dropDown_Row .dropdown_div {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px; }
+  .userEventContainer .dropDown_Row .dropdown_div #exampleSelect {
+    width: 200px; }
+
+.userEventContainer .date_range_div {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px; }
+  .userEventContainer .date_range_div Input {
+    width: 200px; }
+
+.userEventContainer .card-subtitle {
+  margin: 5px 0px; }

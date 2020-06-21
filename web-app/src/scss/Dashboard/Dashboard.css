@@ -1,0 +1,11 @@
+.comingsoonDiv {
+  position: absolute;
+  font-size: 25px;
+  left: 35%;
+  top: 50%;
+  z-index: 1; }
+
+.activityTable {
+  background-color: gray;
+  opacity: 0.3;
+  color: #2f353a; }

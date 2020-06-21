@@ -1,0 +1,73 @@
+#  Pipeline for development
+image: node:8
+develop:
+  stage: deploy
+  image: ruby:latest
+  cache:
+    paths:
+    - node_modules/
+  script:
+   - gem install dpl
+   - dpl --provider=heroku --app=partle-dev-admin --api-key=$HEROKU_API_KEY
+  except:
+    - master
+    - staging
+
+
+master:
+  stage: deploy
+  image: node:10
+  cache:
+    paths:
+    - node_modules/
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY_PROD2" | base64 -d )
+  - mkdir -p ~/.ssh
+  - echo -e "Host partle\n\tHostname $SSH_PROD2_INSTANCE\n\tPort 22\n\tUser ubuntu\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+  - echo "Deploy to Staging server"
+  - git remote set-url --push origin ssh://partle:/home/ubuntu/admin.git
+  - npm install --only=dev && npm install
+  - rm -rf build
+  - npm run build
+  - rm -rf dist
+  - mv build dist
+  - git config user.email "kashif91ahmed@gmail.com"
+  - git config user.name "Kashif Ahmed"
+  - git add .
+  - git commit -m "Update Build"
+  - git push -f origin HEAD:refs/heads/master
+  only:
+    - master
+
+
+# For master production deployment
+# master:
+#   stage: deploy
+#   image: node:10
+#   cache:
+#     paths:
+#     - node_modules/
+#   before_script:
+#   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+#   - eval $(ssh-agent -s)
+#   - ssh-add <(echo "$SSH_PRIVATE_KEY_PROD" | base64 -d )
+#   - mkdir -p ~/.ssh
+#   - echo -e "Host partle\n\tHostname ec2-52-60-231-121.ca-central-1.compute.amazonaws.com\n\tPort 22\n\tUser ec2-user\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+#   script:
+#   - echo "Deploy to Staging server"
+#   - git remote set-url --push origin ssh://partle:/home/ec2-user/admin.git
+#   - npm install --only=dev && npm install
+#   - rm -rf build
+#   - npm run build
+#   - rm -rf public
+#   - mv build public
+#   - git config user.email "kashif91ahmed@gmail.com"
+#   - git config user.name "Kashif Ahmed"
+#   - git add .
+#   - git commit -m "Update Build"
+#   - git push -f origin HEAD:refs/heads/master
+#   only:
+#     - master

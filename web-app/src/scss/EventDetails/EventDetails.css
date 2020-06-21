@@ -1,0 +1,23 @@
+.eventInfoDiv {
+  margin-bottom: 15px; }
+  .eventInfoDiv p {
+    margin-bottom: 5px; }
+  .eventInfoDiv .location_date {
+    display: block; }
+  .eventInfoDiv .hostDetailSpan {
+    display: block; }
+  .eventInfoDiv .boldSpan {
+    font-weight: bold; }
+  .eventInfoDiv .earn_fees_Col {
+    text-align: right;
+    padding-right: 20px; }
+
+.nav-link:active {
+  border-radius: 0px 20px 0px 0px;
+  margin-left: 20px; }
+
+.nav-tabs {
+  margin-left: 17px; }
+
+.navLink {
+  border-radius: 0px 25px 0px 0px; }

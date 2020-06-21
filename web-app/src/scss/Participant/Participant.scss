@@ -1,0 +1,29 @@
+.card-header{
+    text-align: center;
+}
+.mainDiv{
+    height: 60vh;
+    overflow: auto;
+    .user-card{
+        margin:10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    .card-header{
+        text-align: center;
+        font-weight: bold;
+    }
+    .card-block{
+        margin-top:0px !important
+    }
+    .userImage{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .userDetail{
+        margin-top: 10px;
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+}

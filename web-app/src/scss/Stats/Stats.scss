@@ -1,0 +1,53 @@
+.statsContainer{
+    padding: 0px 15px;
+    .dateRange_Row{
+        margin-right: 10px;
+        .date_range_div{
+            display: flex;
+            margin-bottom: 20px;
+            width: 18vw;
+            float: right;
+            border:1px solid #c7c7c7;
+            border-radius: 5px;
+            .calenderIcon{
+               font-size: 25px;
+                margin: 0px 0px 0px 5px;
+            }
+            Button{
+                background: none;
+                border: none;
+                padding-left: 0px;
+            }
+            Input{
+                width: 200px;
+                text-align: center;
+                margin-bottom: 0px;
+                background: none;
+                border: none;
+                padding-right: 5px;
+            }
+        }
+    }
+    .cardsRow{
+        vertical-align: middle;
+        .cardDiv{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            width: 250px;
+            text-align: center;
+            padding: 5% 0;
+            height: 150px;
+            .card-block{
+                padding: 12% 0;
+                .values{
+                    font-weight: bold
+                }
+            }
+        }
+        span{
+            display: block
+        }
+    }
+}

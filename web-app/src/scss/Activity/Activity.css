@@ -1,0 +1,19 @@
+.activityContainer {
+  height: 60vh !important;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .activityContainer .activity_Row {
+    padding: 5px; }
+    .activityContainer .activity_Row .userImage {
+      width: 50px;
+      height: 50px; }
+    .activityContainer .activity_Row .activityDescription {
+      display: flex;
+      align-self: center; }
+    .activityContainer .activity_Row .activityDate {
+      display: flex;
+      align-self: center;
+      justify-content: flex-end;
+      padding-right: 25px; }
+  .activityContainer .card {
+    width: 98%; }

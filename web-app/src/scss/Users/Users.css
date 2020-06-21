@@ -1,0 +1,40 @@
+.tableBody .user {
+  cursor: pointer; }
+
+.tableBody .banUser {
+  cursor: pointer;
+  background-color: #c0392b;
+  color: white; }
+
+.table tr > th {
+  cursor: pointer; }
+
+.userImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px; }
+
+.iconStyle {
+  font-size: 30px; }
+
+.userDetails {
+  margin-top: 10px; }
+
+.labels {
+  font-size: 18px; }
+
+.banButton {
+  width: 80px;
+  margin-right: 10px; }
+
+.unBanButton {
+  width: 90px;
+  margin-right: 10px; }
+
+.createAdminBtn {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: white; }
+
+.createAdminBtn:hover {
+  color: grey; }

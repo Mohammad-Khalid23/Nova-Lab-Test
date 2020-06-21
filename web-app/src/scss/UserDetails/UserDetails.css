@@ -1,0 +1,38 @@
+.userInfoDiv {
+  margin-bottom: 15px; }
+  .userInfoDiv .userImage {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50px; }
+  .userInfoDiv .username_email_col {
+    padding-left: 40px;
+    margin-top: 10px; }
+  .userInfoDiv .row:first-of-type {
+    margin-bottom: 25px; }
+  .userInfoDiv p {
+    margin-bottom: 0px; }
+  .userInfoDiv .name_email_span {
+    display: block; }
+  .userInfoDiv .verified_Col {
+    text-align: right;
+    padding-right: 20px; }
+    .userInfoDiv .verified_Col .iconStyle {
+      font-size: 18px;
+      margin: 3px 5px 0px 5px; }
+    .userInfoDiv .verified_Col .boldText {
+      font-weight: bold; }
+    .userInfoDiv .verified_Col .banUserButton {
+      background-color: crimson;
+      color: white;
+      border-radius: 7px;
+      margin-top: 8px; }
+
+.nav-link:active {
+  border-radius: 0px 20px 0px 0px;
+  margin-left: 20px; }
+
+.nav-tabs {
+  margin-left: 17px; }
+
+.navLink {
+  border-radius: 0px 25px 0px 0px; }

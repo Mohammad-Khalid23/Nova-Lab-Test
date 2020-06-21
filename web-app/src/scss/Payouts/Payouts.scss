@@ -1,0 +1,71 @@
+.tableBody{
+    .request{
+        cursor: pointer;
+    }
+    td{
+        vertical-align: middle !important;
+    } 
+}
+.contentCenter{
+    text-align: center;
+}
+.date_range_div{
+    display: flex;
+    margin-bottom: 20px;
+    float: right;
+    border:1px solid #c7c7c7;
+    border-radius: 5px;
+    height: 38px;
+    .calenderIcon{
+       font-size: 25px;
+        margin: 0px 0px 0px 5px;
+    }
+    Button{
+        background: none;
+        border: none;
+        padding-left: 0px;
+    }
+    Input{
+        width: 200px;
+        text-align: center;
+        margin-bottom: 0px;
+        background-color: #EFF2F5;
+        border: none;
+        padding-right: 5px;
+    }
+
+    .form-control:disabled{
+    background-color: #EFF2F5;    
+    }
+}
+.modal-content > .modal-header > .modal-title{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    .fa-times{
+        cursor: pointer;
+    }
+}
+.date-pickerModal{
+    width: 100%
+}
+.datePicker-filter{
+    text-align: right;
+}
+.status-filter{
+    border: 1px solid #c7c7c7;
+    padding: 3px 12px;
+    margin-left: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 38px;    
+    select{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    }
+}
+ 

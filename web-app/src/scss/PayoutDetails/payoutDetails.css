@@ -1,0 +1,31 @@
+.fadeIn .main-div .transactions-div {
+  border: 1px solid black;
+  padding: 10px; }
+
+.fadeIn .main-div .details-div .payoutMethod-div {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.fadeIn .main-div .details-div .event-div {
+  border: 1px solid black;
+  padding: 10px; }
+
+.fadeIn .amount-req {
+  padding: 10px 0px; }
+
+.fadeIn .paid-btn {
+  margin: 15px 0px;
+  padding: 0px;
+  justify-content: flex-end; }
+
+.fadeIn .created-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 50%; }
+
+.fadeIn .card-block {
+  margin-top: 20px; }
+  .fadeIn .card-block h2 {
+    padding: 10px 0px; }
