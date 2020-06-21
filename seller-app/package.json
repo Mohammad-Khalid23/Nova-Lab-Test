@@ -11,7 +11,7 @@
     "android:prod": "react-native run-android --variant=release"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "moment": "^2.24.0",
     "react": "16.8.3",
     "react-native": "0.59.8",
